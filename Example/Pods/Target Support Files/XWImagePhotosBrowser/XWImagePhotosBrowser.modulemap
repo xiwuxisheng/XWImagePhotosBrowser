@@ -1,0 +1,6 @@
+framework module XWImagePhotosBrowser {
+  umbrella header "XWImagePhotosBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}

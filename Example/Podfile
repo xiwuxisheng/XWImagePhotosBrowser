@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'XWImagePhotosBrowser_Example' do
+  pod 'XWImagePhotosBrowser', :path => '../'
+
+  target 'XWImagePhotosBrowser_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

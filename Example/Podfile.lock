@@ -1,0 +1,37 @@
+PODS:
+  - Masonry (1.1.0)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - XWImagePhotosBrowser (0.1.0):
+    - Masonry (~> 1.1.0)
+    - SDWebImage (~> 4.4.2)
+    - XWImagePhotosBrowser/Common (= 0.1.0)
+    - XWImagePhotosBrowser/Protocol (= 0.1.0)
+  - XWImagePhotosBrowser/Common (0.1.0):
+    - Masonry (~> 1.1.0)
+    - SDWebImage (~> 4.4.2)
+  - XWImagePhotosBrowser/Protocol (0.1.0):
+    - Masonry (~> 1.1.0)
+    - SDWebImage (~> 4.4.2)
+
+DEPENDENCIES:
+  - XWImagePhotosBrowser (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  XWImagePhotosBrowser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  XWImagePhotosBrowser: 9cf588a66280fbb81cd7ae271b55e73a0c813ba0
+
+PODFILE CHECKSUM: 0c8d616c5640082c71440e58857c522991777bea
+
+COCOAPODS: 1.7.0.beta.3
