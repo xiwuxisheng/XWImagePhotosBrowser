@@ -1,17 +1,23 @@
 # XWImagePhotosBrowser
+这里是仿照微信图片浏览器制作的通用控件[XWImagePhotosBrowser](https://github.com/xiwuxisheng/XWImagePhotosBrowser)，主要包括一下特点:  
+1.支持图片缩放拉伸及手势操作  
+2.支持图片仿微信位置变换的动画  
+3.通过协议扩展图片显示数据，本地和网络都可  
+4.加入图片默认图更改及文字描述.  
 
-[![CI Status](https://img.shields.io/travis/xiwuxisheng/XWImagePhotosBrowser.svg?style=flat)](https://travis-ci.org/xiwuxisheng/XWImagePhotosBrowser)
-[![Version](https://img.shields.io/cocoapods/v/XWImagePhotosBrowser.svg?style=flat)](https://cocoapods.org/pods/XWImagePhotosBrowser)
-[![License](https://img.shields.io/cocoapods/l/XWImagePhotosBrowser.svg?style=flat)](https://cocoapods.org/pods/XWImagePhotosBrowser)
-[![Platform](https://img.shields.io/cocoapods/p/XWImagePhotosBrowser.svg?style=flat)](https://cocoapods.org/pods/XWImagePhotosBrowser)
+# 效果显示图  
+![效果图](http://kan.027cgb.com/620613/gitpic/imageBroswer.gif)
 
-## Example
+## 核心代码使用范例  
+![使用核心代码图](http://kan.027cgb.com/620613/gitpic/WechatIMG5.jpeg)  
+第一个expandPhotoBroswer方法用于打开图片浏览器  
+后续两个代理方法用于处理位置动画，采集当前图片相册达到的位置及frame，来进行弹出和关闭的动画
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## 适配  
+语言换环境：Objective C
+iOS系统：iOS 8.0++
 
-## Requirements
-
-## Installation
+## 安装
 
 XWImagePhotosBrowser is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -20,7 +26,7 @@ it, simply add the following line to your Podfile:
 pod 'XWImagePhotosBrowser'
 ```
 
-## Author
+## 作者
 
 xiwuxisheng, xiw@addcn.com
 
