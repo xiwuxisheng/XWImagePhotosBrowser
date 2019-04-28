@@ -6,10 +6,10 @@
 4.加入图片默认图更改及文字描述.  
 
 # 效果显示图  
-![效果图](http://kan.027cgb.com/620613/gitpic/imageBroswer.gif)
+![效果图](http://i2.bvimg.com/685434/a7e5d35d66ef4d86.gif)
 
 ## 核心代码使用范例  
-![使用核心代码图](http://kan.027cgb.com/620613/gitpic/WechatIMG5.jpeg)  
+![使用核心代码图](http://i1.bvimg.com/685434/c26879d0056ecd43.jpg)  
 第一个expandPhotoBroswer方法用于打开图片浏览器  
 后续两个代理方法用于处理位置动画，采集当前图片相册达到的位置及frame，来进行弹出和关闭的动画
 
