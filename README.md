@@ -1,9 +1,9 @@
 # XWImagePhotosBrowser
 这里是仿照微信图片浏览器制作的通用控件[XWImagePhotosBrowser](https://github.com/xiwuxisheng/XWImagePhotosBrowser)，主要包括一下特点:  
-1.支持图片缩放拉伸及手势操作。  
-2.支持图片仿微信位置变换的动画。  
-3.通过协议扩展图片显示数据，本地和网络都可。  
-4.加入图片默认图更改及文字描述。
+1>支持图片缩放和手势  
+2>支持图片仿微信位置变换动画  
+3>支持网络和本地图片数据模型，以协议作为适配器  
+4>允许更换默认图及加入图片文字米描述  
 
 # 效果显示图  
 ![效果图](http://i2.bvimg.com/685434/4742301bd8b7c601.gif)
