@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'XWImagePhotosBrowser'
-    s.version          = '0.1.0'
+    s.version          = '0.1.1'
     s.summary          = '仿微信图片浏览器.'
     
     # This description is used to generate tags and improve search results.
@@ -33,17 +33,24 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '8.0'
     
-    s.source_files = 'XWImagePhotosBrowser/Classes/Controller/*','XWImagePhotosBrowser/Classes/View/*'
-    s.subspec 'Common' do |cs|
-        cs.source_files = 'XWImagePhotosBrowser/Classes/Common/*.{h,m}'
-    end
-    s.subspec 'Protocol' do |cs|
-        cs.source_files = 'XWImagePhotosBrowser/Classes/Protocol/*.{h,m}'
-    end
+    if ENV['IS_SOURCE'] || ENV['XWImagePhotosBrowser']
+        s.source_files = 'XWImagePhotosBrowser/Classes/Controller/*','XWImagePhotosBrowser/Classes/View/*'
+        s.subspec 'Common' do |cs|
+            cs.source_files = 'XWImagePhotosBrowser/Classes/Common/*.{h,m}'
+        end
+        s.subspec 'Protocol' do |cs|
+            cs.source_files = 'XWImagePhotosBrowser/Classes/Protocol/*.{h,m}'
+        end
     
-    s.resource_bundles = {
-        'XWImagePhotosBrowser' => ['XWImagePhotosBrowser/Assets/Resource/*.png']
-    }
+        s.resource_bundles = {
+            'XWImagePhotosBrowser' => ['XWImagePhotosBrowser/Assets/Resource/*.png']
+        }
+    else
+        s.vendored_frameworks = 'XWImagePhotosBrowser/Products/XWImagePhotosBrowser.framework'
+        s.resource_bundles = {
+            'XWImagePhotosBrowser' => ['XWImagePhotosBrowser/Products/XWImagePhotosBrowser.bundle']
+        }
+    end
     
     s.frameworks = 'UIKit', 'Foundation'
     s.dependency 'SDWebImage', '~> 4.4.2'
